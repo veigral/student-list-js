@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10px 160px;
+}
+
+thead th {
+  cursor: pointer;
+}
+
+.forms {
+  display: flex;
+}
+
+.forms__add {
+  width: 65%;
+}
+
+.forms__filter {
+  width: 35%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Этап 1. Создайте верстку элементов, которые будут статичны (неизменны).  -->
+    <div class="container">
+      <h1>Список студентов</h1>
+      <div class="forms mb-3">
+        <div class="forms__add mr-3">
+          <h2>Добавить студента</h2>
+          <form class="form-group" action="#" id="add-form">
+            <input class="form-control mb-2" type="text" name="Фамилия" id="add-lastname-inp" placeholder="Фамилия">
+            <input class="form-control mb-2" type="text" name="Имя" id="add-name-inp" placeholder="Имя">
+            <input class="form-control mb-2" type="text" name="Отчество" id="add-surname-inp" placeholder="Отчество">
+            <input class="form-control mb-2" type="date" name="Дата рождения" id="add-birthday-inp">
+            <input class="form-control mb-2" type="number" name="Год начала обучения" id="add-yearStudy-inp" placeholder="Год начала обучения">
+            <input class="form-control mb-2" type="text" name="Факультет" id="add-faculty-inp" placeholder="Факультет">
+            <button type="submit" class="btn btn-primary">Добавить студента</button>
+          </form>
+        </div>
+        <div class="forms__filter">
+          <h2>Фильтры</h2>
+          <form id="filter" class="form-group">
+            <input class="form-control mb-2" type="text" name="filterFIO" id="filterFIO" placeholder="ФИО">
+            <input class="form-control mb-2" type="text" name="filterFaculty" id="filterFaculty" placeholder="Факультет">
+            <input class="form-control mb-2" type="number" name="filterStartYear" id="filterStartYear" placeholder="Год начала обучения">
+            <input class="form-control mb-2" type="number" name="filterEndtYear" id="filterEndYear" placeholder="Год окончания обучения">
+          </form>
+        </div>
+      </div>
+
+
+      <div id="app">
+
+      </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
